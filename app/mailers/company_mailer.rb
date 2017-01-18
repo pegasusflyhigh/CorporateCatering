@@ -1,8 +1,8 @@
 class CompanyMailer < ApplicationMailer
 	default :from =>'bbhuvnaprabhu@gmail.com'
-	 def registration_confirmation(company)
+	 def account_deletion(company)
     @user = company
     
-    mail(:to=> @user.email, :subject=> 'Hi!')
-  end
+    mail(:to=> @user.email, :subject=> 'ACCOUNT DELETION')
+  end	
 end
