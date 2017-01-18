@@ -1,6 +1,6 @@
 class CompanyMailer < ApplicationMailer
 	default :from =>'bbhuvnaprabhu@gmail.com'
-	 def welcome_email(company)
+	 def registration_confirmation(company)
     @user = company
     
     mail(:to=> @user.email, :subject=> 'Hi!')

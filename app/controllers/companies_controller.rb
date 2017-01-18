@@ -38,7 +38,7 @@ class CompaniesController < ApplicationController
 	def destroy
     @company = Company.find(params[:id])
     @company.destroy
-    CompanyMailer.welcome_email(@company).deliver_now
+    CompanyMailer.registration_confirmation(@company).deliver_now
     redirect_to companies_path
   end
 
