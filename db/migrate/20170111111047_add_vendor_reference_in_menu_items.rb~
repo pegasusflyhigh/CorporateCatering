@@ -1,0 +1,5 @@
+class AddVendorReferenceInMenuItems < ActiveRecord::Migration[5.0]
+  def change
+  	add_reference :menuitems ,:vendors ,foriegn_key: true, index: true
+  end
+end
